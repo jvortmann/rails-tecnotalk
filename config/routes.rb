@@ -1,4 +1,6 @@
 Tecnotalk::Application.routes.draw do
+  resources :categories
+
   resources :references
 
   # The priority is based upon order of creation:

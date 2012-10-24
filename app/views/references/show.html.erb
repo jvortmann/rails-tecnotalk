@@ -1,15 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Category:</b>
-  <%= @reference.category %>
-</p>
-
-<p>
-  <b>Link:</b>
-  <%= @reference.link %>
-</p>
-
+<%= render :partial => 'reference', object: @reference %>
 
 <%= link_to 'Edit', edit_reference_path(@reference) %> |
 <%= link_to 'Back', references_path %>

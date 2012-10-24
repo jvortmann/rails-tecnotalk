@@ -24,7 +24,7 @@ describe ReferencesController do
   # Reference. As you add validations to Reference, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {category: "Piano", link: "qualquer coisa"}
   end
 
   # This should return the minimal set of values that should be in the session

@@ -11,8 +11,8 @@
 
 <% @references.each do |reference| %>
   <tr>
-    <td><%= reference.category %></td>
-    <td><%= reference.link %></td>
+    <td><%= reference.category.name %></td>
+    <td><%= link_to reference.link, reference.link %></td>
     <td><%= link_to 'Show', reference %></td>
     <td><%= link_to 'Edit', edit_reference_path(reference) %></td>
     <td><%= link_to 'Destroy', reference, method: :delete, data: { confirm: 'Are you sure?' } %></td>
